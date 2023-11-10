@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <HEAD> 
+        <title>Ansel 9A 20</title>
+        <style> 
+             .banner {
+                 background-color: #006700;
+                 height: 85px;
+                 text-align: center;
+                 margin: auto;
+                 padding: 10px;
+                 font-size: 60px;
+                 font-weight: bold;
+          }
+          .moving {
+              background-color: #008000de;
+              height :25px ;
+              text-align: center;
+              margin:auto;
+              padding-top: 5px ;
+              padding-bottom: 5px;
+              font-size: medium ;
+           }
+           .home {
+              background-color: #00b300;
+              height:15px ;
+              text-align: center;
+              margin: auto;
+              padding: 5px; 
+              font-size: small;
+           }
+           .N{
+              text-align: center;
+           }
+          .A{
+            text-align: center;
+            margin: auto;
+            
+          }
+             </style>
+ 
+             
+      
+      <body> 
+         <div class = "banner">
+        <hi>SMP SANTA ANGELA BANDUNG</hi>
+     </div>
+     <div class= "moving">
+        <marquee>
+         Komunitas pembelajar yang kritis, kreatif dan inovatif dalam mengintegrasikan ilmu, iman dan nilai-nilai kemanusiaan seturut semangat Santa Angela
+        </marquee>
+     </div>
+     <div class = "home">
+        <a href = "index.html">Home</a> |<a href = "profile.html">Profile</a> | <a href = "gallery.html">Gallery</a> | <a href = "guru.html">Guru</a> | <a href = "Sejarah.html">Sejarah</a> | <a href = "Kurikulum.html">Kurikulum</a> | <a href = "Fasilitas.html">Fasilitas</a> | <a href = "Prestasi.html">Prestasi</a>   
+      </div>
+    </head>
+<head>
+    <script>
+        n=0;
+        
+        function pilih(){
+            switch(n){
+                case 0:
+                    a = "https://smp.santa-angela.sch.id/images/guru/G-1460517381-prudi-1.jpg";
+                    nama= "Robertus Prudi";
+                    warna="blue";
+                    break;
+                case 1:
+                    a = "https://smp.santa-angela.sch.id/images/guru/G-1460523189-sugiyo-1.jpg";
+                    nama= "Benediktus Sugiyo";
+                    warna="blue";
+                    break;
+                case 2:
+                    a = "https://smp.santa-angela.sch.id/images/guru/G-1461804756-agus-1.jpg";
+                    nama= "Agustinus Hariyanto";
+                    warna="blue";
+                    break;
+                case 3:
+                    a = "https://smp.santa-angela.sch.id/images/guru/G-1460513479-sutriyanti-1.jpg";
+                    nama= "Sutriyanti";
+                    warna="blue";
+                    break;
+                case 4:
+                    a = "https://smp.santa-angela.sch.id/images/guru/G-1460531112-herni-1.jpg";
+                    nama= "Theresia Herni";
+                    warna="blue";
+                case 5:
+                    a = "https://smp.santa-angela.sch.id/images/guru/G-1460529553-ADI-1.jpg";
+                    nama= "Ignatius Adinugroho";
+                    warna="blue";
+                case 5:
+                    a = "https://smp.santa-angela.sch.id/images/guru/G-1460519566-aman-1.jpg";
+                    nama= "Aman Damianus Sitanggang";
+                    warna="blue";
+                case 6:
+                    a = "https://smp.santa-angela.sch.id/images/guru/G-1460520289-dedy-pramudita-1.jpg";
+                    nama= "Dedy Pramudita Gunawan";
+                    warna="blue";
+                    break;
+                default:
+            }
+        }
+        function next(){
+        
+            pilih();
+            n+=1;
+            if (n>4){
+                n=0;
+            }
+            document.getElementById("foto").src=a;
+            document.getElementById("guru").innerHTML=nama;
+            
+        }
+        function prev(){
+            
+            pilih();
+           
+            n-=1;
+            if (n<0){
+                n=4;
+            }
+            document.getElementById("foto").src=a;
+            document.getElementById("guru").innerHTML=nama;
+            
+        }
+        </script>
+</head>
+<body>
+    <div class = "detail">               
+        <button type="button" onclick="prev()">PREVIOUS</button>
+        <button type="button" onclick="next()">NEXT</button>
+        </div> 
+        
+        <div class = "gambar">
+        <img src="https://smp.santa-angela.sch.id/images/guru/G-1460517381-prudi-1.jpg" id="foto">
+        <h3 id="guru">Robertus Prudi</h3>
+    
+</body>
+</html>
